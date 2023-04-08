@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet1.css"> <!--CSS for navigation bar-->
+    <link rel="stylesheet" href="stylesheet2.css"> <!--CSS for this specific page-->
+    <link rel="stylesheet" href="stylesheet3.css"> <!--CSS for all pages-->
+    <link rel="stylesheet" href="stylesheet6.css"> <!--CSS for the side navagation bar-->
+    <title>Data</title>
+</head>
+<body>
+   <!--I added the header/main/footer tags so I could style the page more easily-->
+   <!--Removing the div tag deleted the white space at the bottom of the webpage-->
+   <!--By using the header/main/footer tags to control the styling of my website, I was able to ensure the different background colors between the header, footer, 
+   and main would transition to eachother without any white space in between.-->
+   <header>
+       <!--"tabindex" property was added to the both navigation bars so a user can use the "tab" key to traverse through the contents of the navigation bars-->
+    <nav tabindex="0">   
+      <!--class "navigation" corresponds to the styling of all elements under the <ul> tag-->  
+        <ul class="navigation">
+         <!--id "navbar-home-icon" is specifically used to style the home image appropiately within the navigation bar-->
+         <li id="navbar-home-icon">
+            <a href="index.html"><img src="./graphics/icons/home.gif" alt="A home icon that leads to the homepage of the website" id="home-icon"></a>
+         </li>
+         <!--class "navigationlinks" is for links of other webpages; used to style their appearance within the navigation bar-->
+         <li class="navigation-links">
+            <a href="topic.html">Topic</a>
+         </li>
+         <li class="navigation-links">
+            <a href="research.html">Research</a>
+         </li>
+         <li class="navigation-links">
+            <a href="data.html" class="navigation-links">Data</a>
+         </li>  
+         
+         <li class="navigation-links">
+            <a href="references.html">References</a>
+         </li>
+         <li class="navigation-links">
+            <a href="style.html">Style</a>
+         </li>
+         <li class="navigation-links">
+            <a href="layout.html">Layout</a>
+         </li>
+         <li class="navigation-links">
+            <a href="modality.html">Modality</a>
+         </li>
+         <li class="navigation-links">
+            <a href="professionalization.html">Professionalization</a>
+         </li>
+        </ul>
+     </nav>
+   </header>
+   <!--Side bar added in between the header and main tags to avoid the sidebar having styling from either containers-->
+   <nav tabindex="0">
+      <!--'side-navbar' class styles the vertical navigation bar to the left of the page-->
+      <ul class="side-navbar">
+         <li><a href="#Introduction">Introduction</a></li>
+         <li><a href="#Format data for analysis">Format Data For Analysis</a></li>
+         <li><a href="#Run descriptive statistics">Run Descriptive Statistics</a></li>
+         <li><a href="#Run inferential statistics">Run Inferential Statistics</a></li>
+         <li><a href="#Test your knowledge">Test Your Knowledge</a></li>
+      </ul>
+   </nav>
+   <main>
+      <!--Section tags were added to the main componets of the webpage so the user could use side bar navigation to easily traverse through the website's content-->
+   <section id="Introduction">
+   <!--id "page-heading" is used to style the heading of the index page relative to other content within the index page-->
+    <h1 id="page-heading">How to Organize and Analyze Research Data</h1>
+    <!--The id for the aside elements are unique to each; they have their own styling, respective to their contents and position in the page-->
+    <aside id="aside-data1">
+   
+      <p> For this lesson, you'll need the following: </p>
+      <ul>
+         <li>Microsoft Excel</li>
+         <li>PASW (formerly SPSS) statistics software, or free trial download </li>
+         <li>Descriptive statistics and inferential statistics</li>
+      </ul>
+
+      <p>You should already be familiar with:</p>
+      <ul>
+         <li>The basic functions and tools of Excel</li>
+          <!--"colored-bold-text" is used to distinguish a word that has more importance/emphasis-->
+         <li><strong class="colored-bold-text">Descriptive statistics</strong> and <strong class="colored-bold-text">inferential statistics</strong></li>
+         <li>Research design and how to identify <strong class="colored-bold-text">independent variables</strong> and <strong class="colored-bold-text">dependent variables</strong></li>
+      </ul>
+    </aside>
+   <!--class "text" is used to style text in <p> tag relative to other content within the index page-->
+   <p class="text">This short lesson is intended for graduate and advanced undergraduate students undertaking original research projects.
+      After completing the 30-minute lesson, you will be able to to: </p>
+   <ul class="text">
+      <li>Format raw research data in an Excel spreadsheet for efficient analysis</li>
+      <li>Run basic descriptive statistics in Excel</li>
+      <li>Prepare the document for statistical analysis in the software package PASW</li>
+   </ul>
+   </section>
+   <section id="Format data for analysis">
+       <!--"second-heading" and "third-heading" class are used throughout the class to differentiate each sub heading from one another-->
+      <h2 class="second-heading">Format Data for Analysis</h2>
+
+      <p class="text">Make sure the computer you are working on has Microsoft Excel installed. Open the document ToolBox_DataLesson.xls [[[NOTE: NEED LINK TO DOWNLOAD TUTORIAL EXCEL FILE]]] in Excel and follow along with the lesson, taking action as instructed.
+      In the Raw_Dataset spreadsheet, the name of each variable has been entered in the first row of each column.</p>
+      <ol class="text">
+         <li>Each variable name must be different from other variable names.</li>
+         <li>The first variable (in column A) is a <Strong class="colored-bold-text">unique identifier. </Strong></li>
+         <li>Variable names must start with a letter (not numbers or special characters), so change <em>4tutorial_types to tutorial_types.</em></li>
+         <li>Name variables so that they are intuitive to you. Therefore, change <em> use </em> and <em>useful </em> to <em>perc_ease_of_use and perc_usefulness</em>, respectively.</li>
+         <li>Your spreadsheet should look like Figure 1, and it should now be readily apparent that Column F refers to <em> Perceived
+         Usefulness </em> and Column G refers to <em>Perceived Ease of Use. </em></li>
+      </ol>
+       <!--"image-centering" class is used to properly style the images to avoid them being too big for the webpage-->
+      <img src="./graphics/illustrations/datalesson_fig3.png" alt="A table that has tutorial type, gender, experience, and task categorical values that were formatted as dichotomous variables. The heading names are at the top of the spreedsheet, horizontaly formatted." class="image-centering">
+       <!--"captions" class is used to style the captions below images; mainly used to create space between the image and text-->
+      <figcaption class="captions">Figure 1. Tutorial type, gender, experience, and task categorical values have been formatted as dichotomous variables</figcaption>
+      <p class="text">Data values, or rows, have been input for each subject in the experiment.</p>
+      <ol class="text">
+         <li>Decide on input conventions and stick to them. In <em>gender</em>, change the "female" value to "F".</li>
+         <li>Separate data into component values whenever possible by adding new columns. For example, <em>tasks_completed</em> values (Y/Y/N) 
+         can be broken up into three components. So, add columns <em>task1</em>, <em>task2</em>, and <em>task3</em>, and reformat values appropriately.</li>
+         <li>Double-check to ensure no data entry errors have been made, then delete the old <em>tasks_completed</em> column.</li>
+         <li>Your Raw_Dataset spreadsheet should now look like Figure 2.
+         </li>
+      </ol>
+
+      <img src="./graphics/illustrations/datalesson_fig2.png" alt="A table that shows values for each variable that were entered in a consistent format. The values were entered vertically, respective to their appropaite headers" class="image-centering">
+      <figcaption class="captions">Figure 2. Values for each variable are entered in a consistent format.</figcaption>
+
+      <p class="text">Replace categorical data values with "0" or "1" (0=no, 1=yes) to indicate whether or 
+      not the value is represented for the given subject/item. This makes the categorical values <strong class="colored-bold-text">dichotomous</strong>, 
+      which gives the researcher maximum flexibility in testing for relationships or correlations.</p>
+      <!--The id for the aside elements are unique to each; they have their own styling, respective to their contents and position in the page-->
+      <aside id="aside-data2">
+         <p>Dichotomous variables allow for the easy isolation of characteristics
+         for analysis. For example, separating experience levels allows the researcher to 
+         test in PASW whether subjects with low experience have perceived ease of use scores significantly different from those with medium and high experience levels.</p>
+      </aside>
+
+      <ol class="text">
+         <li>Copy the Raw_Dataset values into the Sheet2 tab. Rename this sheet Formatted_Data.</li>
+         <li>n the Formatted_Data sheet, add new columns with <strong>Insert > Columns</strong> for each distinct value 
+         in categorical data columns (<em>tutorial_types</em>, <em>gender</em>, <em>exp_level</em>, <em>task1</em>, <em>task2</em>, and <em>task3</em>). You 
+         do not have to add a new column for <em>task1</em>, <em>task2</em>, and <em>task3</em> because their values are already dichotomous. </li>
+         <li>Rename columns according to each possible categorical value. Copy and paste the values from the original column.</li>
+         <li>Replace dichotomous data values with "0" or "1" (0=no, 1=yes) using the replace function: <strong>Edit > Replace.</strong></li>
+         <li>our Formatted_Data spreadsheet should now look like Figure 3.</li>
+      </ol>
+
+      <img src="./graphics/illustrations/datalesson_fig3 (1).png" alt="A table of tutorial type, gender, experience, and task categorical values that were formatted as dichotomous variables. The heading names are at the top of the spreedsheet, horizontaly formatted." class="image-centering">
+      <figcaption class="captions">Figure 3. Tutorial type, gender, experience, and task categorical values have been formatted as dichotomous variables.</figcaption>
+   </section>
+
+   <section id="Run descriptive statistics">
+
+      <h2 class="second-heading">Run Descriptive Statistics</h2>
+      <!--The id for the aside elements are unique to each; they have their own styling, respective to their contents and position in the page-->
+      <aside id="aside-data3">
+         <p>Analyzing descriptive statistics may lead you to ask new questions. For example, perc_enjoy is much higher on 
+            average than perc_usefulness, which also has a large variance. This suggests that a segment of users may not have 
+            considered the system useful even though they enjoyed using it.</p>
+      </aside>
+      
+      <p class="text">Run descriptive (summary) statistics on the dataset and output results in a new spreadsheet. 
+      If necessary, rearrange columns so that data requiring summary, those with <strong class="colored-bold-text">continuous</strong> values, are adjacent. 
+      (In the spreadsheet, the continuous values of <em>perc_enjoy</em>, <em>perc_usefulness</em>, and <em>perc_ease_of_use</em> are already adjacent.)</p>
+      <p class="text">Write down the "input range" (i.e. H2:J26) of the data requiring summary, making sure not to include variable labels.</p>
+      <ol class="text">
+         <li>Go to <strong>Tools > Add-Ins...</strong> and make sure <strong>Analysis ToolPak</strong> is checked. Click OK.</li>
+         <li>Go to <strong>Tools > Data Analysis</strong> and select <strong>Descriptive Statistics</strong>. Click OK</li>
+         <li>Enter the input range in the blank and check <strong>Summary Statistics</strong>. Click OK.</li>
+      </ol>
+
+      <p class="text">The descriptive statistics summary will output in a new sheet. Rename this spreadsheet Descriptive_Stats. 
+      Label the output according to the variables. For example, <em>Column 1</em> should be <em>perc_enjoy</em>. Your Descriptive_Stats spreadsheet should now look like Figure 4.
+      Analyzing descriptive statistics is a great way to start appraising a dataset before running inferential statistics. 
+      What insights about the dataset can you glean from the summary statistics for <em>perc_usefulness</em> and <em>perc_ease_of_use?</em></p>
+
+      <img src="./graphics/illustrations/datalesson_fig4.png" alt="A table that showcases varoius different measures of statistics, such as the mean, standard deviation, median, and mode. Variables names are at the top of the spreedsheet, respective to their associated statistics." class="image-centering">
+      <figcaption class="captions">Figure 4. Excel will not run descriptive statistics with non-numeric characters, so the variable labels must be re-entered.</figcaption>
+   </section>
+
+   <section id="Run inferential statistics">
+      <h2 class="second-heading">Run Inferential Statistics</h2>
+
+      <p class="text">Open PASW and upload the spreadsheet. (IIT labs in Stuart Building, room 112, have PASW. You can also download a 30-day free trial.)</p>
+      <ol class="text">
+         <li>When PASW starts, it will prompt you for a data source. Select <strong> Open an existing data source > More Files...</strong> </li>
+         <li>Set the file type to Excel, then find and open the file.</li>
+         <li>From the list, select the Formatted_Data worksheet. Click OK. You should now see the dataset.</li>
+      </ol>
+
+      <p class="text">The most commonly used statistical methods and tests are found under the <strong>Analyze</strong> menu in the standard toolbar.</p>
+      <p class="text">Figure 5 shows where to find some common statistical methods and tests. Under PASW's <strong>Analyze</strong> menu, see if you can also find the following:</p>
+      <ol class="text">
+         <li>Wilcoxon-Mann-Whitney test</li>
+         <li>Simple linear regression</li>
+         <li>Non-parametric correlation</li>
+      </ol>
+
+      <img src="./graphics/illustrations/datalesson_fig5.png" alt="By clicking on the 'Analyze' button in the spreedsheet, it gives a list of statistical method and tests. Red text specifically points to sections of the list that highlight Pearson's Coefficient, T-tests, and Chi-Square tests (under crosstabs)." class="image-centering">
+      <figcaption class="captions">Figure 5. Don't assume PASW doesn't run a given test. Many are located under broader statistical classifications.</figcaption>
+
+      <p class="text">Use your prior knowledge or the <a href="http://www.ats.ucla.edu/stat/mult_pkg/whatstat/default.htm"><em>Choosing the Correct Statistic</em></a> resource to determine which statistic to run to find whether
+      there is a significant difference in perc_usefulness between free_play and other tutorial types.</p>
+      <!--The id for the aside elements are unique to each; they have their own styling, respective to their contents and position in the page-->
+      <aside id="aside-data4">
+         <p>Consult <a href="http://www.ats.ucla.edu/stat/mult_pkg/whatstat/default.htm">UCLA's <em>Choosing the Correct Statistic</em></a> to ensure the statistical anlaysis is appropriate for your research question(s), variables of interest, and associated data types.</p>
+      </aside>
+   
+      <p class="text">You should have determined that the Kruskal-Wallis one-way analysis of variance is the appropriate test. Go to <strong>Analyze > Nonparametric Tests > K Independent Samples...</strong> 
+      A new window will open prompting you to select the variables (by column name) to be tested. </p>
+
+      <ol class="text">
+         <li>Select the <em>perc_usefulness</em> variable from the scrollable list on the left, and click the top arrow to move it to the Test Variable List (i.e. dependent variable).</li>
+         <li>Select the <em>free_play</em> variable from the scrollable list, and click the bottom arrow to move it to the Grouping Variable section (i.e. independent variable).</li>
+         <li>Click <strong>Define Range...</strong>, and enter "0" in the Minimum field and "1" in the Maximum field. This specifies the two categorical variables to be tested. 
+         Your screen should now look like Figure 6. Click Continue.</li>
+      </ol>
+
+      <img src="./graphics/illustrations/datalesson_fig6.png" alt="Within the spreedsheet, a menu named 'Tests for several independent samples' appears. A box to the left of the menu showcases some variable names and a box to the right (test variable list) has one variable selected. At the bottom right of the image, another menu shows setting up the minimum and maximum range" class="image-centering">
+      <figcaption class="captions">Figure 6. For Kruskal-Wallis, an independent (free_play) and a dependent variable (perc_usefulness) are selected.</figcaption>
+
+      <p class="text">Click OK to display the statistical analysis results to new viewing window. Your results screen should look like Figure 7. 
+      Because statistical analysis output contains many numerical components (some of which must be cited in formal reports), it is a good idea to 
+      save it to a format independent of the PASW software. To save the results, go to <strong>File > Export</strong>. Change Document Type to the desired output format 
+      (Word, Excel, PDF, etc.), then click OK.</p>
+
+      <img src="./graphics/illustrations/datalesson_fig7.png" alt="An image that has a heading of 'Kruskal-Wallis Test,' with two tables below it. The first table has a heading of 'Ranks,' while the bottom table has a heading of 'Test Statistics.'" class="image-centering">
+      <figcaption class="captions">Figure 7. PASW allows users to export statistics to common document types.</figcaption>
+   </section>
+
+   <section id="Test your knowledge">
+      <h2 class="second-heading">Test Your Knowledge</h2>
+      <p class="text">Now that you've finished the lesson, please complete a short quiz to test your understanding of formatting research datasets 
+      for comprehensive statistical analysis.</p>
+   </section>
+   </main>
+ 
+   <!--"text-footer" class styles the text of the footer-->
+   <footer>
+      <p class="text-footer">Communication 421: Sustainable Info Structure Project </p>
+   </footer>
+</body>
+</html>

@@ -1,0 +1,75 @@
+main{
+    background-color: rgb(169, 210, 224);  
+    height: 660vh;
+    margin-left: 13.064vw;
+    margin-right: 13.064vw;
+    padding-top: 30px;
+}
+
+#aside-data1{
+    background-color:rgb(175, 167, 167);
+    border-style: solid;
+    border-width: 0.396vw; 
+    border-color: rgb(97, 93, 93);
+    width: 21.991vw;
+    height: 19.5vw;
+    font-family: Georgia, serif;
+    font-weight: bolder;
+    font-size: 0.94vw;
+    padding-left: 0.344vw;
+    padding-right: 0.344vw;
+    float: left;
+    margin-right: 2.375vw;
+    margin-left: 0.813vw;
+}
+
+#aside-data2{
+    background-color:rgb(175, 167, 167);
+    border-style: solid;
+    border-width: 0.396vw; 
+    border-color: rgb(97, 93, 93);
+    width: 20.991vw;
+    height: 12.991vw;
+    font-family: Georgia, serif;
+    font-weight: bolder;
+    font-size: 1.021vw;
+    padding-left: 0.574vw;
+    padding-right: 0.574vw;
+    float: right;
+    margin-right: 1.8vw;
+    margin-left: 0.713vw;
+}
+
+#aside-data3{
+    background-color:rgb(175, 167, 167);
+    border-style: solid;
+    border-width: 0.396vw; 
+    border-color: rgb(97, 93, 93);
+    width: 21.991vw;
+    height: 10.998vw;
+    font-family: Georgia, serif;
+    font-weight: bolder;
+    font-size: 1.021vw;
+    padding-left: 0.601vw;
+    padding-right: 0.601vw;
+    float: left;
+    margin-right: 1.8vw;
+    margin-left: 0.713vw;
+}
+
+#aside-data4{
+    background-color:rgb(175, 167, 167);
+    border-style: solid;
+    border-width: 0.396vw; 
+    border-color: rgb(97, 93, 93);
+    width: 21.991vw;
+    height: 7.998vw;
+    font-family: Georgia, serif;
+    font-weight: bolder;
+    font-size: 1.021vw;
+    padding-left: 0.601vw;
+    padding-right: 0.601vw;
+    float: right;
+    margin-right: 1.8vw;
+    margin-left: 0.713vw;
+}

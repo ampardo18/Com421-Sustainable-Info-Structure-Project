@@ -1,0 +1,47 @@
+#home-icon{
+    height: 5.701vw;
+    width: 5.701vw; 
+}
+
+.navigation{
+    list-style-type: none;
+    padding: 0;
+    margin:0; 
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation-links{
+    float: left;
+    border: solid;
+    border-color: grey;
+    border-width: 0.079vw;
+}
+
+.navigation-links a{
+    display: block;
+    font-weight: bolder;
+    padding: 1.425vw;
+    color: white;
+    background-color: rgb(41, 39, 39); 
+    text-decoration: none;
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    font-size: 1.029vw;
+}
+
+.navigation-links a:hover{
+    display: block;
+    font-weight: bolder;
+    background-color: grey;
+    color: black;
+}
+
+
+
+
+
+
+

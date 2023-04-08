@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet1.css"> <!--CSS for navigation bar-->
+    <link rel="stylesheet" href="stylesheet4.css"> <!--CSS for pages that don't have much content -->
+    <link rel="stylesheet" href="stylesheet3.css"> <!--CSS for all pages-->
+    <title>Homepage</title>
+</head>
+
+<body>
+   <!--I added the header/main/footer tags so I could style the page more easily-->
+   <!--Removing the div tag deleted the white space at the bottom of the webpage-->
+   <header>
+      <!--A nav tag that allowed the creation of the navigation bar-->
+      <!--"tabindex" property was added to the both navigation bars so a user can use the "tab" key to traverse through the contents of the navigation bars-->
+      <!--By using the header/main/footer tags to control the styling of my website, I was able to ensure the different background colors between the header, footer, 
+      and main would transition to eachother without any white space in between.-->
+     <nav tabindex="0">     
+         <!--class "navigation" corresponds to the styling of all elements under the <ul> tag-->
+         <ul class="navigation">
+          <!--id "navbarhomeicon" is specifically used to style the home image appropiately within the navigation bar-->
+          <li id="navbar-home-icon">
+             <a href="index.html"><img src="./graphics/icons/home.gif" alt="A home icon that leads to the homepage of the website" id="home-icon"></a>
+          </li>
+          <!--class "navigationlinks" is for links of other webpages; used to style their appearance within the navigation bar-->
+          <li class="navigation-links">
+             <a href="topic.html">Topic</a>
+          </li>
+          <li class="navigation-links">
+             <a href="research.html">Research</a>
+          </li>
+          <li class="navigation-links">
+             <a href="data.html" class="navigation-links">Data</a>
+          </li>  
+          
+          <li class="navigation-links">
+             <a href="references.html">References</a>
+          </li>
+          <li class="navigation-links">
+             <a href="style.html">Style</a>
+          </li>
+          <li class="navigation-links">
+             <a href="layout.html">Layout</a>
+          </li>
+          <li class="navigation-links">
+             <a href="modality.html">Modality</a>
+          </li>
+          <li class="navigation-links">
+             <a href="professionalization.html">Professionalization</a>
+          </li>
+         </ul>
+      </nav>
+    </header>
+    <main>
+      <!--id "page-heading" is used to style the heading of the index page relative to other content within the index page-->
+      <h1 id="page-heading">Research Paper Toolbox</h1>
+      <p class="text">Constructing a research paper is an integral part of being a graduate student in the Information Architecture, 
+      Technical Communication and Information Design, and Technical Communication programs at IIT. 
+      </p>
+      <!--class "text" is used to style text in <p> tag relative to other content within the index page-->
+      <p class="text">
+        There is no right or wrong way to put a paper together, but there are a wealth of tools available to make the process efficient and 
+        manageable. In this course, you will find an explanation of the basic steps involved in writing a research paper, as 
+        well as a selection of tools that complement certain steps. 
+      </p>
+
+      <p class="text">
+        If you are new to writing research papers, this course will guide you through each of the basic steps;
+        even if you are an experienced writer, you can still refreh your knowledge with one or more lessons. To begin, choose a lesson by
+        clicking one of the modules above.
+      </p>
+    </main>
+    <footer>
+      <!--"text-footer" class styles the text of the footer-->
+      <p class="text-footer">Communication 421: Sustainable Info Structure Project </p>
+    </footer>
+</body>
+</html>

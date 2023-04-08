@@ -1,0 +1,78 @@
+main{
+    background-color: rgb(169, 210, 224);   
+    height: 963vh;
+    margin-left: 13.064vw;
+    margin-right: 13.064vw;
+    padding-top: 30px;
+}
+
+#aside-research1{
+    background-color:rgb(175, 167, 167);
+    border-style: solid;
+    border-width: 0.396vw; 
+    border-color: rgb(97, 93, 93);
+    width: 21.991vw;
+    height: 11.5vw;
+    font-family: Georgia, serif;
+    font-weight: bolder;
+    font-size: 0.94vw;
+    padding-left: 0.444vw;
+    padding-right: 0.118vw;
+    float: left;
+    margin-right: 2.375vw;
+    margin-left: 0.813vw;
+}
+
+#aside-research2{
+    background-color:rgb(175, 167, 167);
+    border-style: solid;
+    border-width: 0.396vw; 
+    border-color: rgb(97, 93, 93);
+    width: 21.991vw;
+    height: 10.5vw;
+    font-family: Georgia, serif;
+    font-weight: bolder;
+    font-size: 0.94vw;
+    padding-left: 0.344vw;
+    padding-right: 0.344vw;
+    float: right;
+    margin-right: 1.075vw;
+    margin-left: 0.813vw;
+}
+#aside-research3{
+    background-color:rgb(175, 167, 167);
+    border-style: solid;
+    border-width: 0.396vw; 
+    border-color: rgb(97, 93, 93);
+    width: 22vw;
+    height: 10.5vw;
+    font-family: Georgia, serif;
+    font-weight: bolder;
+    font-size: 0.94vw;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    float: left;
+    margin-right: 2.375vw;
+    margin-left: 0.813vw;
+}
+
+#aside-research4{
+    background-color:rgb(175, 167, 167);
+    border-style: solid;
+    border-width: 0.396vw; 
+    border-color: rgb(97, 93, 93);
+    width: 21.991vw;
+    height: 13.5vw;
+    font-family: Georgia, serif;
+    font-weight: bolder;
+    font-size: 0.94vw;
+    padding-left: 0.499vw;
+    padding-right: 0.499vw;
+    float: right;
+    margin-right: 1.075vw;
+    margin-left: 0.813vw;
+}
+
+
+
+
